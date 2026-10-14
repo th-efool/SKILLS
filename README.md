@@ -1,22 +1,49 @@
-# Claude Skills Library
+# SKILLS — Reusable AI Agent Skills
 
-Production-ready skills for Claude Code. Built and maintained by [OneWave AI](https://www.onewave-ai.com) -- AI consulting for small and mid-size businesses.
+<p align="center">
+  <strong>A practical library of reusable skills for coding, design, business workflows, and AI-agent orchestration.</strong>
+  <br />
+  Compatible with skill-based coding assistants and agent workflows.
+</p>
 
-**204 skills** across three pillars: **business** (sales, marketing, consulting, ops), **everyday life** (personal finance, travel, fitness, job hunting), and **coding** (engineering, design, AI agent architecture).
+<p align="center">
+  <a href="https://github.com/th-efool/SKILLS/blob/master/LICENSE"><img src="https://img.shields.io/github/license/th-efool/SKILLS?style=flat-square" alt="MIT License" /></a>
+  <a href="https://github.com/th-efool/SKILLS"><img src="https://img.shields.io/github/stars/th-efool/SKILLS?style=flat-square" alt="GitHub stars" /></a>
+  <img src="https://img.shields.io/badge/format-SKILL.md-4B5563?style=flat-square" alt="SKILL.md format" />
+  <img src="https://img.shields.io/badge/Agent%20Skills-open%20standard-2563EB?style=flat-square" alt="Agent Skills standard" />
+  <img src="https://img.shields.io/badge/dependencies-none-16A34A?style=flat-square" alt="No dependencies required" />
+</p>
 
-Companion repo: **[Open Agent Stack](https://github.com/OneWave-AI/open-agent-stack)** -- installable plugins, managed agents, multi-agent orchestrators, and 7 design-token themes. Skills here stay single-file and zero-dependency; anything with a manifest, a team, or a build step lives there.
+This repository brings together reusable, task-focused AI skills for software engineering, UI/UX design, agent orchestration, security, business operations, marketing, strategy, and everyday productivity. Each skill provides structured instructions that help a compatible assistant perform a specific workflow more consistently.
+
+The collection includes **200+ skills** organized by use case. Most are self-contained `SKILL.md` files and require no build step or package installation.
+
+> **Attribution:** This repository includes a collection originally documented as the [Claude Skills Library by OneWave AI](https://github.com/OneWave-AI/claude-skills). Refer to the individual files and upstream project for original authorship and licensing details.
+
+**Related project:** [Open Agent Stack](https://github.com/OneWave-AI/open-agent-stack) contains complementary plugins, managed agents, multi-agent orchestrators, and design-token themes.
+
 
 ---
 
-## Featured: /agent-army
+## Featured: Agent Army
 
 Deploy 3 to 50+ independent Claude agents in parallel, each with its own 1M token context window. Each agent spawns sub-agents underneath. A top-tier commander (Fable or Opus) orchestrates the swarms, and you pick a power level -- Max Power, Heavy, Balanced, or Economy -- that sets the Opus/Sonnet/Haiku model mix for each layer. The system runs in waves -- execute, audit, propagate -- and checks its own work between each.
 
 Built for tasks where one agent isn't enough: large refactors, full-site audits, bulk content generation, codebase migrations. Battle-tested on 60+ concurrent agents in a single session.
 
-**[View agent-army](https://github.com/OneWave-AI/claude-skills/tree/main/agent-army)**
+**[View agent-army](https://github.com/th-efool/SKILLS/tree/master/agent-army)**
 
 ---
+
+## Contents
+
+- [Getting Started](#getting-started)
+- [Featured: Agent Army](#featured-agent-army)
+- [Skill Categories](#categories)
+- [Skill Format](#skill-format)
+- [Upstream Project and Attribution](#upstream-project-and-attribution)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Getting Started
 
@@ -25,10 +52,10 @@ Built for tasks where one agent isn't enough: large refactors, full-site audits,
 claude skill install OneWave-AI/claude-skills/<skill-name>
 
 # Or clone the full library
-git clone https://github.com/OneWave-AI/claude-skills.git ~/.claude/skills
+git clone https://github.com/th-efool/SKILLS.git ~/.claude/skills
 
 # OpenAI Codex CLI (same files, unchanged)
-git clone https://github.com/OneWave-AI/claude-skills.git ~/.codex/skills
+git clone https://github.com/th-efool/SKILLS.git ~/.codex/skills
 ```
 
 Each skill is a self-contained `SKILL.md` file. No dependencies, no build step.
@@ -277,16 +304,11 @@ Claude Code loads this as a system prompt when the skill is invoked. Only `name`
 
 ---
 
-## About OneWave AI
+## Upstream Project and Attribution
 
-[OneWave AI](https://www.onewave-ai.com) is a boutique AI consulting firm based in Florida, specializing in Claude and the Anthropic ecosystem. We help small and mid-size businesses implement AI that ships real results -- from Claude for Enterprise deployment to custom agent architecture.
+This repository's skill collection is based on work documented in the [OneWave AI Claude Skills Library](https://github.com/OneWave-AI/claude-skills). The upstream project provides the original collection context and related materials. Please preserve attribution when reusing or redistributing individual skills, and review the applicable license and file-level notices.
 
-- [Claude Bootcamp & Team Training](https://www.onewave-ai.com/claude-bootcamp) -- in-person and virtual bootcamps, trainings, and workshops built on your real workflows
-- [AI Training for Your Team](https://www.onewave-ai.com/ai-training) -- custom Claude + ChatGPT curriculum, then we deploy the tools you were trained on
-- [Claude Consulting](https://www.onewave-ai.com/claude-consulting)
-- [Services](https://www.onewave-ai.com/services)
-- [Blog](https://www.onewave-ai.com/blog)
-- [Contact](https://www.onewave-ai.com/contact)
+For the upstream author's services, documentation, and updates, visit [OneWave AI](https://www.onewave-ai.com).
 
 ---
 
