@@ -48,14 +48,16 @@ Built for tasks where one agent isn't enough: large refactors, full-site audits,
 ## Getting Started
 
 ```bash
-# Claude Code: install a single skill
-claude skill install OneWave-AI/claude-skills/<skill-name>
+# Clone the collection
+git clone https://github.com/th-efool/SKILLS.git
 
-# Or clone the full library
-git clone https://github.com/th-efool/SKILLS.git ~/.claude/skills
+# Claude Code: copy a skill folder into your personal skills directory
+mkdir -p ~/.claude/skills
+cp -r SKILLS/<skill-name> ~/.claude/skills/
 
-# OpenAI Codex CLI (same files, unchanged)
-git clone https://github.com/th-efool/SKILLS.git ~/.codex/skills
+# OpenAI Codex CLI: copy the same skill into its skills directory
+mkdir -p ~/.codex/skills
+cp -r SKILLS/<skill-name> ~/.codex/skills/
 ```
 
 Each skill is a self-contained `SKILL.md` file. No dependencies, no build step.
