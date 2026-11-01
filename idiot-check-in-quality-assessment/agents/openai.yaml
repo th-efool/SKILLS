@@ -1,0 +1,3 @@
+interface:
+  display_name: "IdiotCheckInQualityAssessment"
+  short_description: "Audit completeness, bugs, root causes, and code quality"

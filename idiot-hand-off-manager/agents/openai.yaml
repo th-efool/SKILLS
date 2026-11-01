@@ -1,0 +1,3 @@
+interface:
+  display_name: "IdiotHandOffManager"
+  short_description: "Execute handoff guides with phased specialist agents"

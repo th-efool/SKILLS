@@ -1,0 +1,3 @@
+interface:
+  display_name: "IdiotHandOffGuide"
+  short_description: "Exact code and steps in one implementation handoff"
