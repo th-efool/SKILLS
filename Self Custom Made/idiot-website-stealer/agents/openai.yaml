@@ -1,0 +1,6 @@
+interface:
+  display_name: "Idiot Website Stealer"
+  short_description: "Turn website ZIPs into verified local pages"
+  default_prompt: "Use $idiot-website-stealer to import this website ZIP, repair and verify it end to end, and use the original website name as the route when I omit one."
+policy:
+  allow_implicit_invocation: true
